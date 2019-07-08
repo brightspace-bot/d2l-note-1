@@ -363,12 +363,7 @@ export class D2LNotes extends D2LTypographyMixin(LocalizeMixin(LitElement)) {
 							</d2l-note>
 						</li>
 					`)}
-					</ol>` : html`
-						<span class="d2l-body-standard">${
-							this.emptystring !== undefined || this.enternotestring !== undefined ?
-								this.emptystring || this.enternotestring :
-								this.localize('empty')}
-						</span>
+					</ol>` : html`<span class="d2l-body-standard">${this.emptystring !== undefined || this.enternotestring !== undefined ? this.emptystring || this.enternotestring : this.localize('empty')}</span>
 					`}
 
 				${hasmore ? html`
@@ -388,13 +383,11 @@ export class D2LNotes extends D2LTypographyMixin(LocalizeMixin(LitElement)) {
 
 				${(hasmore || this.notes.length) && this.cancreate ? html`<hr>` : null}
 
-				${this.cancreate ? html`${
-					notes.length > 0 && this.enternotestring !== undefined ? html`<div class='d2l-notes-enter-note-string'>${this.enternotestring}</div>`: html``}
+				${this.cancreate ? html`${notes.length > 0 && this.enternotestring !== undefined ? html`<div class='d2l-notes-enter-note-string'>${this.enternotestring}</div>` : html``}
 					<d2l-note-edit new placeholder="${this.editplaceholder}">
 						<slot class="d2l-body-standard" name="description" slot="description"><div>${this.description()}</div></slot>
 						<div slot="settings">${this.settings()}</div>
-					</d2l-note-edit>` : null
-				}
+					</d2l-note-edit>` : null}
 			</div>
 		`;
 	}
