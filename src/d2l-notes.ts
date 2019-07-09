@@ -329,7 +329,7 @@ export class D2LNotes extends D2LTypographyMixin(LocalizeMixin(LitElement)) {
 				.d2l-notes-enter-note-string,
 				.d2l-note-emptystring {
 					line-height: 1;
-					margin-bottom: 0.9rem;
+					margin-bottom: 0.6rem;
 				}
 			</style>
 			<div class="d2l-typography">
