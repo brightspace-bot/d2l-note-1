@@ -78,7 +78,7 @@ export class D2LNoteEdit extends LocalizeMixin(LitElement) {
 	 * True while a request is being made, disables the components, defaults to false
 	 */
 	@property({ type: Boolean })
-	_makingCall?: boolean;
+	_makingCall: boolean = false;
 
 	/**
 	 * Indicates whether the component is in its expanded state. If true,
