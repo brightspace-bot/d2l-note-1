@@ -151,13 +151,13 @@ export class D2LNotes extends LocalizeMixin(LitElement) {
 
 		/**
 		 * Fired when load more is tapped
-		 * @fires
+		 * @fires d2l-notes-load-more
 		 */
 		this.EVENT_LOAD_MORE = 'd2l-notes-load-more';
 
 		/**
 		 * Fired when load less is tapped
-		 * @fires
+		 * @fires d2l-notes-load-less
 		 */
 		this.EVENT_LOAD_LESS = 'd2l-notes-load-less';
 

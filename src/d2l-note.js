@@ -162,7 +162,7 @@ export class D2LNote extends LocalizeMixin(LitElement) {
 
 		/**
 		 * Fired when delete menu item is tapped
-		 * @fires
+		 * @fires d2l-note-delete
 		 */
 		this.EVENT_DELETE = 'd2l-note-delete';
 	}
