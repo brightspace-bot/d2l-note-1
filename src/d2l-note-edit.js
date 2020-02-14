@@ -88,25 +88,25 @@ export class D2LNoteEdit extends LocalizeMixin(LitElement) {
 
 		/**
 		 * Fired when edit is finished
-		 * @event
+		 * @fires
 		 */
 		this.EVENT_FINISHED = 'd2l-note-edit-finished';
 
 		/**
 		 * Fired when Add button is tapped
-		 * @event
+		 * @fires
 		 */
 		this.EVENT_ADD = 'd2l-note-edit-add';
 
 		/**
 		 * Fired when Save button is tapped
-		 * @event
+		 * @fires
 		 */
 		this.EVENT_SAVE = 'd2l-note-edit-save';
 
 		/**
 		 * Fired when Discard button is tapped
-		 * @event
+		 * @fires
 		 */
 		this.EVENT_DISCARD = 'd2l-note-edit-discard';
 	}
